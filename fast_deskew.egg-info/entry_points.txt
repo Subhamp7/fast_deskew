@@ -1,0 +1,3 @@
+[console_scripts]
+fast_deskew = fast_deskew.__main__:main
+
