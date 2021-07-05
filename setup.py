@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.2'
+VERSION = '1.0'
 DESCRIPTION = 'Streaming video data via networks'
 HERE = os.path.abspath(os.path.dirname(__file__))
 

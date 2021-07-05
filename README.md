@@ -13,7 +13,14 @@ INPUT_IMAGE_PATH = "example/input_image.png"
 img_input = cv2.imread(INPUT_IMAGE_PATH,cv2.IMREAD_GRAYSCALE)
 
 result_image, best_angle = deskew(img_input)
-    
+
+OR 
+
+import fast_deskew
+
+INPUT_IMAGE_PATH = "example/input_image.png"
+
+result_image, best_angle = deskew(INPUT_IMAGE_PATH, 1) #0 for image array and 1 for image_path.
 
 <br /> 
 <br /> 
