@@ -1,35 +1,38 @@
-import pathlib
-from setuptools import setup
 
-# The directory containing this file
-HERE = pathlib.Path(__file__).parent
+from setuptools import setup, find_packages
+import codecs
+import os
 
-# The text of the README file
-README = (HERE / "README.md").read_text()
+VERSION = '1.2'
+DESCRIPTION = 'Streaming video data via networks'
+HERE = os.path.abspath(os.path.dirname(__file__))
 
-# This call to setup() does all the work
+with codecs.open(os.path.join(HERE, "README.md"), encoding="utf-8") as file_read:
+    long_description = "\n" + file_read.read()
+
+# Setting up
 setup(
     name="fast_deskew",
-    version="1.0",
-    description="Deskew an image",
-    long_description=README,
-    long_description_content_type="text/markdown",
-    url="https://github.com/Subhamp7/fast_deskew",
+    version=VERSION,
     author="Subham Prasad",
     author_email="subham306952@gmail.com",
+    url="https://github.com/Subhamp7/fast_deskew",
+    description=DESCRIPTION,
+    long_description_content_type="text/markdown",
+    long_description=long_description,
     license="MIT",
+    packages=find_packages(),
+    install_requires=["opencv-python", "scipy","numpy"],
+    keywords=['python','deskew','open cv', 'skew'],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
-    ],
-    packages=["fast_deskew"],
-    include_package_data=True,
-    install_requires=["opencv-python", "scipy"],
-    entry_points={
-        "console_scripts": [
-            "fast_deskew=fast_deskew.__main__:main",
-        ]
-    },
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+        "Intended Audience :: Developers"
+    ]
 )
+

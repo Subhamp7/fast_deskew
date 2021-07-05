@@ -5,6 +5,7 @@
 importing required libraries
 """
 import cv2
+import sys
 import numpy as np
 from scipy.ndimage import interpolation as inter
 
@@ -42,6 +43,7 @@ def deskew(image_skew, delta = 0.5, limit = 5):
                 image has to be shifted and then shifts the image.
     """
     try:
+        print("s")
         image_original=image_skew.copy()
         image_skew=cv2.resize(image_skew,(int(image_skew.shape[1]*0.5),int(image_skew.shape[0]*0.5)))
         image_bin=image_binary(image_skew)
@@ -56,12 +58,9 @@ def deskew(image_skew, delta = 0.5, limit = 5):
     except AttributeError:
         return image_skew, 0
 
-
-
-
 if __name__ == "__main__":
-    INPUT_IMAGE_PATH = "example/input_image.png"
-    img_input = cv2.imread(INPUT_IMAGE_PATH,cv2.IMREAD_GRAYSCALE)
-    result_image, best_angle = deskew(img_input)
-    print('Best angle: {}'.format(best_angle))
-    cv2.imwrite("example/result_image.png", result_image)
+    print("hh")
+    input_img_array= sys.argv[1]
+    deskew(input_img_array)
+    
+    
