@@ -1,51 +1,66 @@
 Metadata-Version: 2.1
 Name: fast-deskew
-Version: 1.1
-Summary: Deskew an image
-Home-page: https://github.com/Subhamp7/fast_deskew
+Version: 1.0.0
+Summary: Streaming video data via networks
+Home-page: UNKNOWN
 Author: Subham Prasad
 Author-email: subham306952@gmail.com
 License: MIT
-Description: # fast_deskew
-        An optimised way to deskew images faster.
-        
-        • Available on :The Python Package Index (PyPI)  :<br /> https://pypi.org/
-        ## Installation
-        ```pip install fast_deskew```
-        
-        ## How to use it?
-        import fast_deskew
-        
-        INPUT_IMAGE_PATH = "example/input_image.png"
-        
-        img_input = cv2.imread(INPUT_IMAGE_PATH,cv2.IMREAD_GRAYSCALE)
-        
-        result_image, best_angle = deskew(img_input)
-            
-        
-        <br /> 
-        <br /> 
-        
-        ## Input Image:
-        
-         ![alt tag](readme_resources/input_image.png)
-        
-        <br /> 
-        <br /> 
-        
-         ## Output Image:
-        
-         ![alt tag](readme_resources/result_image.png)
-        
-        
-         ## License
-        
-        © 2021 Subham Prasad
-        
-        This repository is licensed under the MIT license. See LICENSE for details.
+Keywords: python,deskew,open cv,skew
 Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.6
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Intended Audience :: Developers
 Description-Content-Type: text/markdown
+
+
+# fast_deskew
+An optimised way to deskew images faster.
+
+• Available on :The Python Package Index (PyPI)  :<br /> https://pypi.org/
+## Installation
+```pip install fast_deskew```
+
+## How to use it?
+import fast_deskew
+
+INPUT_IMAGE_PATH = "example/input_image.png"
+
+img_input = cv2.imread(INPUT_IMAGE_PATH,cv2.IMREAD_GRAYSCALE)
+
+result_image, best_angle = fast_deskew.deskew_image(img_input)
+
+OR 
+
+import fast_deskew
+
+INPUT_IMAGE_PATH = "example/input_image.png"
+
+result_image, best_angle = fast_deskew.deskew_image(INPUT_IMAGE_PATH, False) #0 for image array and 1 for image_path.
+
+<br /> 
+<br /> 
+
+## Input Image:
+
+ ![alt tag](readme_resources/input_image.png)
+
+<br /> 
+<br /> 
+
+ ## Output Image:
+
+ ![alt tag](readme_resources/result_image.png)
+
+
+ ## License
+
+© 2021 Subham Prasad
+
+This repository is licensed under the MIT license. See LICENSE for details.
+

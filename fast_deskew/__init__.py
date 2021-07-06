@@ -1,4 +1,12 @@
+'''
+============
+DESKEW IMAGE
+============
+'''
 
-#version of Module
+from .deskew import *
 
-__version__ =1.0
+__version__ = "1.0"
+__author__  = "Subham Prasad"
+
+

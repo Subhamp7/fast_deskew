@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.0'
+VERSION = '1.0.0'
 DESCRIPTION = 'Streaming video data via networks'
 HERE = os.path.abspath(os.path.dirname(__file__))
 
@@ -16,7 +16,6 @@ setup(
     version=VERSION,
     author="Subham Prasad",
     author_email="subham306952@gmail.com",
-    url="https://github.com/Subhamp7/fast_deskew",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,

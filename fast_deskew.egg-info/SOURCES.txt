@@ -1,10 +1,9 @@
 README.md
 setup.py
 fast_deskew/__init__.py
-fast_deskew/__main__.py
+fast_deskew/deskew.py
 fast_deskew.egg-info/PKG-INFO
 fast_deskew.egg-info/SOURCES.txt
 fast_deskew.egg-info/dependency_links.txt
-fast_deskew.egg-info/entry_points.txt
 fast_deskew.egg-info/requires.txt
 fast_deskew.egg-info/top_level.txt
