@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.4'
-DESCRIPTION = 'Deskew any images faster'
+VERSION = '1.0'
+DESCRIPTION = 'Deskew any images faster than ever'
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(os.path.join(HERE, "README.md"), encoding="utf-8") as file_read:
@@ -16,6 +16,7 @@ setup(
     version=VERSION,
     author="Subham Prasad",
     author_email="subham306952@gmail.com",
+    url="https://github.com/Subhamp7/fast_deskew",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
