@@ -34,7 +34,7 @@ result_image, best_angle = fast_deskew.deskew_image(INPUT_IMAGE_PATH, False) #0 
 
  ## Output Image:
 
- ![alt tag](readme_resources/result_image.png)
+ ![alt tag](https://github.com/Subhamp7/fast_deskew/blob/master/readme_resources/result_image.png)
 
 
  ## License

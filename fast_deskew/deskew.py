@@ -9,9 +9,12 @@
 """
 importing required libraries
 """
-import cv2
-import numpy as np
-from scipy.ndimage import interpolation as inter
+try:
+    import cv2
+    import numpy as np
+    from scipy.ndimage import interpolation as inter
+except Exception as e:
+    print("Please make sure all the dependencies are installed :",e)
 
 
 def find_score(arr, angle):

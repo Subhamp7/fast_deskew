@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 import codecs
 import os
 
-VERSION = '1.0.0'
-DESCRIPTION = 'Streaming video data via networks'
+VERSION = '1.4'
+DESCRIPTION = 'Deskew any images faster'
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(os.path.join(HERE, "README.md"), encoding="utf-8") as file_read:
@@ -21,7 +21,8 @@ setup(
     long_description=long_description,
     license="MIT",
     packages=find_packages(),
-    install_requires=["opencv-python", "scipy","numpy"],
+    #install_requires=['opencv-python>=3', 'numpy', 'scipy'],
+    python_requires='>=3',
     keywords=['python','deskew','open cv', 'skew'],
     classifiers=[
         "License :: OSI Approved :: MIT License",

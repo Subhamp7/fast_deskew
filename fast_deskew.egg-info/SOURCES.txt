@@ -5,5 +5,4 @@ fast_deskew/deskew.py
 fast_deskew.egg-info/PKG-INFO
 fast_deskew.egg-info/SOURCES.txt
 fast_deskew.egg-info/dependency_links.txt
-fast_deskew.egg-info/requires.txt
 fast_deskew.egg-info/top_level.txt

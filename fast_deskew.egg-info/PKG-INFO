@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: fast-deskew
-Version: 1.0.0
-Summary: Streaming video data via networks
+Version: 1.4
+Summary: Deskew any images faster
 Home-page: UNKNOWN
 Author: Subham Prasad
 Author-email: subham306952@gmail.com
@@ -16,6 +16,7 @@ Classifier: Operating System :: Unix
 Classifier: Operating System :: MacOS :: MacOS X
 Classifier: Operating System :: Microsoft :: Windows
 Classifier: Intended Audience :: Developers
+Requires-Python: >=3
 Description-Content-Type: text/markdown
 
 
